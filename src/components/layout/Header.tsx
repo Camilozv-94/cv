@@ -1,3 +1,5 @@
+import Button from "../ui/Button";
+
 export default function Header() {
     return (
         <header className="flex flex-row items-center justify-between w-full h-16 px-4">
@@ -16,7 +18,7 @@ export default function Header() {
                         <a href="#">About</a> |
                     </li>
                     <li>
-                        <a href="#">Let's talk</a>
+                        <Button title="Let's talk" variant="neon" url="#" />
                     </li>
                 </ul>
             </nav>
