@@ -1,6 +1,16 @@
+"use client";
 import Button from "../ui/Button";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
+    const router = useRouter();
+
+    const changeLocale = () => {
+        const currentLocale = document.cookie.match(/locale=(.+?)(;|$)/)?.[1] || 'en';
+        const newLocale = currentLocale === 'en' ? 'es' : 'en';
+        document.cookie = `locale=${newLocale}; path=/; max-age=31536000`;
+        router.refresh();
+    }
     return (
         <header className="flex flex-row items-center justify-between  w-full h-16 px-8">
             <div>
@@ -19,6 +29,9 @@ export default function Header() {
                     </li>
                     <li>
                         <Button title="Let's talk" variant="neon" url="#" />
+                    </li>
+                    <li>
+                        <button className="bg-background text-primary p-2  rounded-sm border-1 border-tertiary" onClick={changeLocale}>EN / ES</button>
                     </li>
                 </ul>
             </nav>

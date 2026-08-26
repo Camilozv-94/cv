@@ -1,6 +1,7 @@
 import Button from "../ui/Button";
-
+import { useTranslations } from 'next-intl';
 const HomeSection = () => {
+    const t = useTranslations('Home');
     return (
         <div className="flex flex-row my-10">
             <div className="flex flex-col flex-1 gap-4">
