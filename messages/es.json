@@ -1,9 +1,46 @@
 {
+    "Header": {
+        "title": "Camilo Zulauaga Software Engineer Sr. Full Stack Developer",
+        "nav": {
+            "howIBuild": "Cómo construyo",
+            "experience": "Experiencia",
+            "about": "Sobre mi",
+            "letsTalk": "Hablemos"
+        }
+    },
     "Home": {
         "title": {
             "part1": "Convierto interfaces en",
             "part2": "experiencias."
         },
-        "description": "Desarrollo interfaces digitales escalables, accesibles y centradas en el usuario, donde el diseño y el código trabajan juntos como una única experiencia."
+        "description": "Desarrollo interfaces digitales escalables, accesibles y centradas en el usuario, donde el diseño y el código trabajan juntos como una única experiencia.",
+        "experience": "Ver experiencias",
+        "about": "Sobre mi"
+    },
+    "HowIBuild": {
+        "title": "Como construyo",
+        "description": "Mi proceso",
+        "card": [
+            {
+                "title": "Entender",
+                "description": "Aclarar objetivos, restricciones y métricas de éxito antes de escribir una sola línea de código."
+            },
+            {
+                "title": "Diseñar",
+                "description": "Definir el lenguaje visual, patrones de interacción y jerarquía de componentes."
+            },
+            {
+                "title": "Sistematizar",
+                "description": "Convertir diseños en tokens, componentes reutilizables y patrones documentados."
+            },
+            {
+                "title": "Construir",
+                "description": "Escribir código limpio y modular con enfoque en rendimiento, accesibilidad y pruebas."
+            },
+            {
+                "title": "Optimizar",
+                "description": "Medir, iterar y lanzar con confianza, manteniendo y mejorando continuamente."
+            }
+        ]
     }
 }

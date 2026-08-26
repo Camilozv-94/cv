@@ -1,8 +1,10 @@
 "use client";
 import Button from "../ui/Button";
+import { useTranslations } from 'next-intl';
 import { useRouter } from "next/navigation";
 
 export default function Header() {
+    const t = useTranslations('Header');
     const router = useRouter();
 
     const changeLocale = () => {
@@ -19,16 +21,16 @@ export default function Header() {
             <nav>
                 <ul className="flex flex-row items-center gap-4 text-tertiary divide-x divide-gray-300 [&>li]:pr-3">
                     <li>
-                        <a href="#">How I built</a>
+                        <a href="#">{t('nav.howIBuild')}</a>
                     </li>
                     <li>
-                        <a href="#">Experience</a>
+                        <a href="#">{t('nav.experience')}</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#">{t('nav.about')}</a>
                     </li>
                     <li>
-                        <Button title="Let's talk" variant="neon" url="#" />
+                        <Button title={t('nav.letsTalk')} variant="neon" url="#" />
                     </li>
                     <li>
                         <button className="bg-background text-primary p-2  rounded-sm border-1 border-tertiary" onClick={changeLocale}>EN / ES</button>
