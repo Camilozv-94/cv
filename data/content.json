@@ -1,0 +1,24 @@
+{
+    "card": [
+        {
+            "title": "Understand",
+            "description": "Clarify goals, constraints, and success metrics before writing a single line of code."
+        },
+        {
+            "title": "Design",
+            "description": "Define the visual language, interaction patterns, and component hierarchy."
+        },
+        {
+            "title": "Systematize",
+            "description": "Turn designs into reusable tokens, components, and documented patterns."
+        },
+        {
+            "title": "Build",
+            "description": "Write clean, modular code with performance, accessibility, and testing in mind."
+        },
+        {
+            "title": "Optimize",
+            "description": "Measure, iterate, and ship with confidence-then maintain and improve over time."
+        }
+    ]
+}
