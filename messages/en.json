@@ -42,5 +42,28 @@
                 "description": "Measure, iterate, and ship with confidence-then maintain and improve over time."
             }
         ]
+    },
+    "Stack": {
+        "title": "Stack",
+        "description": "Technologies",
+        "text": "Organized by category-no logo wall, just the tools I use to deliver.",
+        "card": [
+            {
+                "title": "Front-end",
+                "description": "React, Next.js, TypeScript, Tailwind CSS, Zustand, Framer Motion"
+            },
+            {
+                "title": "Back-end",
+                "description": "Node.js, NestJS, Express, PostgreSQL, MongoDB, Redis"
+            },
+            {
+                "title": "DevOps",
+                "description": "Docker, Kubernetes, Terraform, GitHub Actions, AWS"
+            },
+            {
+                "title": "Design",
+                "description": "Figma, Sketch, Adobe XD, Zeplin, InVision"
+            }
+        ]
     }
 }

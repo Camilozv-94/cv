@@ -42,5 +42,28 @@
                 "description": "Medir, iterar y lanzar con confianza, manteniendo y mejorando continuamente."
             }
         ]
+    },
+    "Stack": {
+        "title": "Stack",
+        "description": "Tecnologías",
+        "text": "Organizado por categoría, sin parede de logos, solo las herramientas que uso para entregar.",
+        "card": [
+            {
+                "title": "Front-end",
+                "description": "React, Next.js, TypeScript, Tailwind CSS, Zustand, Framer Motion"
+            },
+            {
+                "title": "Back-end",
+                "description": "Node.js, NestJS, Express, PostgreSQL, MongoDB, Redis"
+            },
+            {
+                "title": "DevOps",
+                "description": "Docker, Kubernetes, Terraform, GitHub Actions, AWS"
+            },
+            {
+                "title": "Design",
+                "description": "Figma, Sketch, Adobe XD, Zeplin, InVision"
+            }
+        ]
     }
 }
