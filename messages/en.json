@@ -1,69 +1,96 @@
 {
-    "Header": {
-        "title": "Camilo Zulauaga Software Engineer Sr. Full Stack Developer",
-        "nav": {
-            "howIBuild": "How I Build",
-            "experience": "Experience",
-            "about": "About",
-            "letsTalk": "Let's talk"
-        }
-    },
-    "Home": {
-        "title": {
-            "part1": "I turn interfaces into",
-            "part2": "experiences."
-        },
-        "description": "I develop scalable, accessible, and user-focused digital interfaces, where design and code work together as a single experience.",
-        "experience": "See my experience",
-        "about": "About me"
-    },
-    "HowIBuild": {
-        "title": "How I Build",
-        "description": "My process",
-        "card": [
-            {
-                "title": "Understand",
-                "description": "Clarify goals, constraints, and success metrics before writing a single line of code."
-            },
-            {
-                "title": "Design",
-                "description": "Define the visual language, interaction patterns, and component hierarchy."
-            },
-            {
-                "title": "Systematize",
-                "description": "Turn designs into reusable tokens, components, and documented patterns."
-            },
-            {
-                "title": "Build",
-                "description": "Write clean, modular code with performance, accessibility, and testing in mind."
-            },
-            {
-                "title": "Optimize",
-                "description": "Measure, iterate, and ship with confidence-then maintain and improve over time."
-            }
-        ]
-    },
-    "Stack": {
-        "title": "Stack",
-        "description": "Technologies",
-        "text": "Organized by category-no logo wall, just the tools I use to deliver.",
-        "card": [
-            {
-                "title": "Front-end",
-                "description": "React, Next.js, TypeScript, Tailwind CSS, Zustand, Framer Motion"
-            },
-            {
-                "title": "Back-end",
-                "description": "Node.js, NestJS, Express, PostgreSQL, MongoDB, Redis"
-            },
-            {
-                "title": "DevOps",
-                "description": "Docker, Kubernetes, Terraform, GitHub Actions, AWS"
-            },
-            {
-                "title": "Design",
-                "description": "Figma, Sketch, Adobe XD, Zeplin, InVision"
-            }
-        ]
+  "Header": {
+    "title": "Camilo Zulauaga Software Engineer Sr. Full Stack Developer",
+    "nav": {
+      "howIBuild": "How I Build",
+      "experience": "Experience",
+      "about": "About",
+      "letsTalk": "Let's talk"
     }
+  },
+  "Home": {
+    "title": {
+      "part1": "I turn interfaces into",
+      "part2": "experiences."
+    },
+    "description": "I develop scalable, accessible, and user-focused digital interfaces, where design and code work together as a single experience.",
+    "experience": "See my experience",
+    "about": "About me"
+  },
+  "HowIBuild": {
+    "title": "How I Build",
+    "description": "My process",
+    "card": [
+      {
+        "title": "Understand",
+        "description": "Clarify goals, constraints, and success metrics before writing a single line of code."
+      },
+      {
+        "title": "Design",
+        "description": "Define the visual language, interaction patterns, and component hierarchy."
+      },
+      {
+        "title": "Systematize",
+        "description": "Turn designs into reusable tokens, components, and documented patterns."
+      },
+      {
+        "title": "Build",
+        "description": "Write clean, modular code with performance, accessibility, and testing in mind."
+      },
+      {
+        "title": "Optimize",
+        "description": "Measure, iterate, and ship with confidence-then maintain and improve over time."
+      }
+    ]
+  },
+  "Stack": {
+    "title": "Stack",
+    "description": "Technologies",
+    "text": "Organized by category-no logo wall, just the tools I use to deliver.",
+    "card": [
+      {
+        "title": "Front-end",
+        "description": "React, Next.js, TypeScript, Tailwind CSS, Zustand, Framer Motion"
+      },
+      {
+        "title": "Back-end",
+        "description": "Node.js, NestJS, Express, PostgreSQL, MongoDB, Redis"
+      },
+      {
+        "title": "DevOps",
+        "description": "Docker, Kubernetes, Terraform, GitHub Actions, AWS"
+      },
+      {
+        "title": "Design",
+        "description": "Figma, Sketch, Adobe XD, Zeplin, InVision"
+      }
+    ]
+  },
+  "Experience": {
+    "title": "Experience",
+    "sub-title": "System Career Milestones",
+    "rows": [
+      {
+        "date": "Feb 2022 - Jul 2026",
+        "location": "// Remote",
+        "title": "Web UI Developer Senior",
+        "company": "Globant LLC",
+        "summary": "Architected front-end solutions and micro front-end architectures, drove migration to a centralized Design System, modernized build systems to RSBuild, executed a JavaScript to TypeScript migration, and optimized end-to-end testing strategies."
+      },
+      {
+        "date": "Oct 2019 - Feb 2022",
+        "location": "// Hibrid",
+        "title": "Web Developer",
+        "company": "Owens Illinois",
+        "summary": "Built internal business applications utilizing React and Node.js, enhanced the corporate website utilizing PHP, JavaScript, and SQL, and managed automated CI/CD pipelines in Azure DevOps."
+      },
+      {
+        "date": "Mar 2019 - Oct 2019",
+        "location": "// Presential",
+        "title": "Lead Software Engineer",
+        "company": "Dream House",
+        "summary": "Developed performance-driven training simulators using Unity and C#, directed the web development team to launch the corporate website, and implemented Scrum agile practices."
+      }
+    ]
+  }
 }
