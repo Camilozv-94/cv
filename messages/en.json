@@ -92,5 +92,12 @@
         "summary": "Developed performance-driven training simulators using Unity and C#, directed the web development team to launch the corporate website, and implemented Scrum agile practices."
       }
     ]
+  },
+  "AboutMe": {
+    "title": "ABOUT",
+    "sub-title": "A little about me",
+    "introduction": "I'm a developer who believes UI should be both beautiful and bulletproof.",
+    "description": "I've spent nearly a decade bridging the gap between creative visualizers and systems engineers. My philosophy is simple: UI components shouldn't just look spectacular-they should be structured like clean, testable software.",
+    "second-description": "I specialize in high-performance React architectures, design systems, and fluid pixel-perfect experiences. Whether it's standardizing a monorepo or micro-optimizing layouts, I approach frontend development as a rigorous architectural discipline."
   }
 }
