@@ -99,5 +99,12 @@
     "introduction": "I'm a developer who believes UI should be both beautiful and bulletproof.",
     "description": "I've spent nearly a decade bridging the gap between creative visualizers and systems engineers. My philosophy is simple: UI components shouldn't just look spectacular-they should be structured like clean, testable software.",
     "second-description": "I specialize in high-performance React architectures, design systems, and fluid pixel-perfect experiences. Whether it's standardizing a monorepo or micro-optimizing layouts, I approach frontend development as a rigorous architectural discipline."
+  },
+  "LetsTalk": {
+    "title": "LET´S TALK",
+    "sub-title": "Have a product in mind?",
+    "introduction": "I'm open to selective contracts, consulting scopes, and long-term partnerships. Send a message and let's talk.",
+    "description-title": "What I'm looking for",
+    "description": "Complex interfaces, design systems, performance-critical UI, and teams that value engineering rigor. If you have a project that needs a senior UI developer / Software Engeneer who can bridge design and production, let's start a conversation."
   }
 }
