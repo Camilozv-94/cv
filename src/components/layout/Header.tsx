@@ -3,6 +3,8 @@ import Button from "../ui/Button";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Fragment } from "react";
+import { ThemeToggle } from "../theme/ThemeToggle";
+
 const LOCALES = ["en", "es"] as const;
 
 export default function Header() {
@@ -17,7 +19,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex flex-row items-center justify-between  w-full h-16 px-8">
+    <header className="flex h-16 w-full flex-row  items-center justify-between px-8">
       <div>
         <h1 className="text-lg font-semibold">
           Camilo Zulauaga{" "}
@@ -26,7 +28,7 @@ export default function Header() {
         </h1>
       </div>
       <nav>
-        <ul className="flex flex-row items-center gap-4 text-tertiary divide-x divide-gray-300 [&>li]:pr-3">
+        <ul className="flex flex-row items-center gap-4 divide-x divide-gray-300 text-tertiary [&>li]:pr-3">
           <li>
             <a href="#">{t("nav.howIBuild")}</a>
           </li>
@@ -40,10 +42,13 @@ export default function Header() {
             <Button title={t("nav.letsTalk")} variant="neon" url="#" />
           </li>
           <li>
+            <ThemeToggle />
+          </li>
+          <li>
             <button
               type="button"
               aria-label={`Current language is ${currentLocale.toUpperCase()}. Click to switch.`}
-              className="bg-background text-primary p-2  rounded-sm border border-tertiary flex flex-row gap-2 divide-x divide-gray-300 [&>*:not(:last-child)]:pr-2 "
+              className="flex flex-row gap-2  divide-x divide-gray-300 rounded-sm border border-tertiary bg-background p-2 text-primary [&>*:not(:last-child)]:pr-2"
               onClick={changeLocale}
             >
               {LOCALES.map((locale) => (
@@ -51,7 +56,7 @@ export default function Header() {
                   <span
                     className={
                       currentLocale === locale
-                        ? "text-secondary font-bold"
+                        ? "font-bold text-secondary"
                         : "text-primary opacity-60"
                     }
                   >

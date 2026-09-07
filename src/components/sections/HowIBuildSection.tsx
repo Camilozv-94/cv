@@ -1,23 +1,31 @@
-import { Card } from "../ui/Card"
-import { useTranslations } from 'next-intl';
+import { Card } from "../ui/Card";
+import { useTranslations } from "next-intl";
 
 const HowIBuild = () => {
-    const t = useTranslations("HowIBuild");
-    const content = t.raw("card") as { title: string, description: string }[];
+  const t = useTranslations("HowIBuild");
+  const content = t.raw("card") as { title: string; description: string }[];
 
-    return (
-        <div className="flex flex-col my-10 gap-2 my-8">
-            <h1 className="text-secondary mb-2 font-bold">{t('title')}</h1>
-            <h2 className="text-primary font-bold text-3xl">{t('description')}</h2>
-            <p className="text-tertiary">A clear methodology that turns ambiguity into a predictable, high-quality outcome.</p>
+  return (
+    <div className="my-10 flex flex-col gap-2">
+      <h1 className="mb-2 font-bold text-secondary">{t("title")}</h1>
+      <h2 className="text-3xl font-bold text-primary">{t("description")}</h2>
+      <p className="text-tertiary">
+        A clear methodology that turns ambiguity into a predictable,
+        high-quality outcome.
+      </p>
 
-            <div className="flex flex-row justify-between mt-10">
-                {content.map((item, index) => (
-                    <Card key={index} title={item.title} description={item.description} index={index} />
-                ))}
-            </div>
-        </div>
-    )
-}
+      <div className="mt-10 flex flex-row justify-between">
+        {content.map((item, index) => (
+          <Card
+            key={index}
+            title={item.title}
+            description={item.description}
+            index={index}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-export default HowIBuild
+export default HowIBuild;

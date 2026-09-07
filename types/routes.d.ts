@@ -21,7 +21,7 @@ interface LayoutSlotMap {
 }
 
 
-export type { AppRoutes, PageRoutes, LayoutRoutes, RedirectRoutes, RewriteRoutes, ParamMap }
+export type { AppRoutes, PageRoutes, LayoutRoutes, RedirectRoutes, RewriteRoutes, ParamMap };
 
 declare global {
   /**

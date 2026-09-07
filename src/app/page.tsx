@@ -7,7 +7,7 @@ import StackSection from "@/components/sections/StackSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 m-8 gap-8">
+    <div className="m-8 flex flex-1 flex-col gap-8">
       <HomeSection />
       <HowIBuild />
       <StackSection />

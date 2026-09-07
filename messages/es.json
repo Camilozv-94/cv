@@ -50,19 +50,19 @@
     "card": [
       {
         "title": "Front-end",
-        "description": "React, Next.js, TypeScript, Tailwind CSS, Zustand, Framer Motion"
+        "description": "React, Next.js, TypeScript, Tailwind CSS, Material UI, Styled Components, Redux, Framer Motion"
       },
       {
-        "title": "Back-end",
-        "description": "Node.js, NestJS, Express, PostgreSQL, MongoDB, Redis"
+        "title": "Testing & Quality",
+        "description": "Playwright, Cypress, Jest, Karma, Jasmine"
       },
       {
-        "title": "DevOps",
-        "description": "Docker, Kubernetes, Terraform, GitHub Actions, AWS"
+        "title": "Architecture & Tooling",
+        "description": "Micro Frontends, RSBuild, Node.js, Git, Azure DevOps, Jenkins, Vite/pnpm"
       },
       {
-        "title": "Design",
-        "description": "Figma, Sketch, Adobe XD, Zeplin, InVision"
+        "title": "AI & Design",
+        "description": "Figma, Cursor, GitHub Copilot, Anthropic Tooling, Antigravity tooling"
       }
     ]
   },
