@@ -12,9 +12,13 @@ export function ThemeToggle() {
       className="flex flex-row gap-2 rounded-md border border-tertiary bg-background p-2 text-primary"
       aria-label="Toggle Theme"
     >
-      <Sun color={theme === "light" ? "var(--secondary)" : "var(--tertiary)"} />
+      <Sun
+        className={theme === "light" ? "stroke-secondary" : "stroke-tertiary"}
+      />
       <div className="h-6 w-px bg-gray-300" aria-hidden="true" />
-      <Moon color={theme === "dark" ? "var(--secondary)" : "var(--tertiary)"} />
+      <Moon
+        className={theme === "dark" ? "stroke-secondary" : "stroke-tertiary"}
+      />
     </button>
   );
 }
