@@ -6,8 +6,8 @@ const HomeSection = () => {
   return (
     <div className="my-10 flex flex-row">
       <div className="flex flex-1 flex-col gap-4">
-        <h1 className="flex flex-col text-4xl font-bold">
-          {t("title.part1")}{" "}
+        <h1 className="flex flex-col text-3xl font-bold md:text-4xl">
+          {t("title.part1")}
           <span className="text-secondary">{t("title.part2")}</span>
         </h1>
         <p className="text-lg text-tertiary">{t("description")}</p>
@@ -16,7 +16,7 @@ const HomeSection = () => {
           <Button title={t("about")} variant="outline" url="#" />
         </div>
       </div>
-      <span className="h-50 w-1/2 bg-secondary" />
+      <span className="hidden h-50 w-1/2 bg-secondary md:block" />
     </div>
   );
 };
