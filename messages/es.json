@@ -1,6 +1,10 @@
 {
   "Header": {
-    "title": "Camilo Zuluaga Software Engineer Sr. Full Stack Developer",
+    "title": {
+      "part1": "Camilo Zuluaga ",
+      "part2": "Software Engineer = ",
+      "part3": "Sr. Full Stack Developer"
+    },
     "nav": {
       "howIBuild": "Cómo construyo",
       "experience": "Experiencia",

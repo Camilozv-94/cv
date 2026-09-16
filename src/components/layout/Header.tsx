@@ -28,10 +28,10 @@ export default function Header() {
     <header className="relative flex h-16 w-full flex-row items-center justify-between border-b border-tertiary/10 bg-background px-4 md:px-8">
       <div>
         <h1 className="text-base font-semibold sm:text-lg">
-          Camilo Zulauaga{" "}
+          {t("title.part1")}
           <span className="hidden sm:inline">
-            <span className="text-secondary">Software Engineer </span> = Sr.
-            Full Stack Developer;
+            <span className="text-secondary">{t("title.part2")}</span>{" "}
+            {t("title.part3")}
           </span>
         </h1>
       </div>
