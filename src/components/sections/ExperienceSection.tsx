@@ -15,7 +15,7 @@ const ExperienceSection = () => {
       <h2 className="text-3xl font-bold text-primary">{t("sub-title")}</h2>
       <div className="mt-4 flex flex-col gap-4 divide-y divide-gray-300">
         {content.map((item, index) => (
-          <div className="flex flex-row gap-4 pb-4" key={index}>
+          <div className="flex flex-col gap-4 pb-4 md:flex-row" key={index}>
             <div className="flex min-w-40 flex-col">
               <h1 className="text-base text-secondary">{item.date}</h1>
               <p className="text-sm text-tertiary">{item.location}</p>
