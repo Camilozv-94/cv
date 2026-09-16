@@ -2,6 +2,7 @@ import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
 import tailwind from "eslint-plugin-tailwindcss";
+import stylistic from "@stylistic/eslint-plugin";
 
 const eslintConfig = defineConfig([
   ...nextVitals,
@@ -19,27 +20,32 @@ const eslintConfig = defineConfig([
   {
     plugins: {
       tailwindcss: tailwind,
+      "@stylistic": stylistic,
     },
     settings: {
       tailwindcss: {
-        config: "src/app/globals.css"
-      }
+        config: "src/app/globals.css",
+      },
     },
     rules: {
-      "semi": ["error", "always"],
+      semi: ["error", "always"],
       "padding-line-between-statements": [
         "error",
         { blankLine: "always", prev: "import", next: "*" },
-        { blankLine: "any", prev: "import", next: "import" }
+        { blankLine: "any", prev: "import", next: "import" },
       ],
       "no-console": ["warn", { allow: ["warn", "error"] }],
       "prefer-const": "error",
-      "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { argsIgnorePattern: "^_" },
+      ],
       "@typescript-eslint/no-empty-object-type": "off",
       "@typescript-eslint/no-explicit-any": "warn",
       "tailwindcss/classnames-order": "error",
-    }
-  }
+      "@stylistic/indent": ["error", 2],
+    },
+  },
 ]);
 
 export default eslintConfig;

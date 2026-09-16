@@ -1,5 +1,6 @@
 import Button from "../ui/Button";
 import { useTranslations } from "next-intl";
+import DesignSVG from "../ui/DesignSVG";
 
 const HomeSection = () => {
   const t = useTranslations("Home");
@@ -16,7 +17,9 @@ const HomeSection = () => {
           <Button title={t("about")} variant="outline" url="#" />
         </div>
       </div>
-      <span className="hidden h-50 w-1/2 bg-secondary md:block" />
+      <span className="hidden h-50 w-1/2 md:block">
+        <DesignSVG />
+      </span>
     </div>
   );
 };
