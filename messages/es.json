@@ -50,19 +50,49 @@
     "card": [
       {
         "title": "Front-end",
-        "description": "React, Next.js, TypeScript, Tailwind CSS, Material UI, Styled Components, Redux, Framer Motion"
+        "elements": [
+          { "tech": "React", "percentage": 100 },
+          { "tech": "Next.js", "percentage": 70 },
+          { "tech": "TypeScript", "percentage": 100 },
+          { "tech": "Tailwind CSS", "percentage": 70 },
+          { "tech": "Material UI", "percentage": 70 },
+          { "tech": "Styled Components", "percentage": 70 },
+          { "tech": "Redux", "percentage": 60 },
+          { "tech": "Framer Motion", "percentage": 20 }
+        ]
       },
       {
         "title": "Testing & Quality",
-        "description": "Playwright, Cypress, Jest, Karma, Jasmine"
+        "elements": [
+          { "tech": "Playwright", "percentage": 70 },
+          { "tech": "Cypress", "percentage": 70 },
+          { "tech": "Jest", "percentage": 80 },
+          { "tech": "Karma", "percentage": 70 },
+          { "tech": "Jasmine", "percentage": 50 }
+        ]
       },
       {
         "title": "Architecture & Tooling",
-        "description": "Micro Frontends, RSBuild, Node.js, Git, Azure DevOps, Jenkins, Vite/pnpm"
+        "elements": [
+          { "tech": "Micro Frontends", "percentage": 70 },
+          { "tech": "RSBuild", "percentage": 60 },
+          { "tech": "Node.js", "percentage": 60 },
+          { "tech": "Git", "percentage": 90 },
+          { "tech": "Azure DevOps", "percentage": 65 },
+          { "tech": "Jenkins", "percentage": 60 },
+          { "tech": "Redux", "percentage": 60 },
+          { "tech": "Vite/pnpm", "percentage": 50 }
+        ]
       },
       {
         "title": "AI & Design",
-        "description": "Figma, Cursor, GitHub Copilot, Anthropic Tooling, Antigravity tooling"
+        "elements": [
+          { "tech": "Figma", "percentage": 70 },
+          { "tech": "Cursor", "percentage": 70 },
+          { "tech": "GitHub Copilot", "percentage": 90 },
+          { "tech": "Anthropic Tooling", "percentage": 70 },
+          { "tech": "Antigravity tooling", "percentage": 65 }
+        ]
       }
     ]
   },
