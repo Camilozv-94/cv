@@ -21,7 +21,7 @@ const HowIBuild = () => {
               key={index}
               title={item.title}
               description={item.description}
-              index={index}
+              index={index + 1}
             />
           ))}
         </div>
