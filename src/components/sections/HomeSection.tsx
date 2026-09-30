@@ -1,6 +1,6 @@
 import Button from "../ui/Button";
 import { useTranslations } from "next-intl";
-import DesignSVG from "../ui/DesignSVG";
+import AnimatedDesignGraphic from "../ui/AnimatedDesignGraphic";
 
 const HomeSection = () => {
   const t = useTranslations("Home");
@@ -18,7 +18,7 @@ const HomeSection = () => {
         </div>
       </div>
       <span className="hidden h-50 w-1/2 md:block">
-        <DesignSVG />
+        <AnimatedDesignGraphic />
       </span>
     </div>
   );
