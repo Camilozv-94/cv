@@ -266,7 +266,7 @@ const AnimatedDesignGraphic = () => {
       <svg width="200px" height="200px">
         <g>
           <line
-            stroke="white"
+            stroke="var(--primary)"
             strokeWidth={6}
             x1={40}
             x2={110}
@@ -274,7 +274,7 @@ const AnimatedDesignGraphic = () => {
             y2={120}
           />
           <line
-            stroke="white"
+            stroke="var(--primary)"
             strokeWidth={6}
             x1={80}
             x2={110}
@@ -288,12 +288,12 @@ const AnimatedDesignGraphic = () => {
             size={40}
             startX={50}
             startY={120}
-            color="white"
+            color="var(--primary)"
             strokeWidth={6}
           />
 
           <line
-            stroke="white"
+            stroke="var(--primary)"
             strokeWidth={6}
             x1={116}
             x2={143}
@@ -307,11 +307,11 @@ const AnimatedDesignGraphic = () => {
             size={20}
             startX={120}
             startY={140}
-            color="white"
+            color="var(--primary)"
             strokeWidth={6}
           />
           <line
-            stroke="white"
+            stroke="var(--primary)"
             strokeWidth={6}
             x1={60}
             x2={60}
@@ -319,7 +319,7 @@ const AnimatedDesignGraphic = () => {
             y2={110}
           />
           <line
-            stroke="white"
+            stroke="var(--primary)"
             strokeWidth={3}
             x1={60}
             x2={45}
@@ -327,7 +327,7 @@ const AnimatedDesignGraphic = () => {
             y2={105}
           />
           <line
-            stroke="white"
+            stroke="var(--primary)"
             strokeWidth={3}
             x1={45}
             x2={45}
@@ -336,9 +336,9 @@ const AnimatedDesignGraphic = () => {
           />
         </g>
         <g>
-          <circle cx={135} cy={75} r={10} fill="white" />
+          <circle cx={135} cy={75} r={10} fill="var(--primary)" />
           <line
-            stroke="white"
+            stroke="var(--primary)"
             strokeWidth={6}
             x1={138}
             x2={135}
@@ -346,7 +346,7 @@ const AnimatedDesignGraphic = () => {
             y2={130}
           />
           <line
-            stroke="white"
+            stroke="var(--primary)"
             strokeWidth={6}
             x1={138}
             x2={110}
@@ -354,7 +354,7 @@ const AnimatedDesignGraphic = () => {
             y2={130}
           />
           <line
-            stroke="white"
+            stroke="var(--primary)"
             strokeWidth={6}
             x1={110}
             x2={110}
@@ -362,7 +362,7 @@ const AnimatedDesignGraphic = () => {
             y2={160}
           />
           <motion.line
-            stroke="#D4D4D4"
+            stroke="var(--tertiary)"
             strokeWidth={6}
             x1={136}
             x2={100}
@@ -376,7 +376,7 @@ const AnimatedDesignGraphic = () => {
             }}
           />
           <line
-            stroke="white"
+            stroke="var(--primary)"
             strokeWidth={6}
             x1={110}
             x2={110}
@@ -385,7 +385,7 @@ const AnimatedDesignGraphic = () => {
           />
 
           <motion.line
-            stroke="white"
+            stroke="var(--primary)"
             strokeWidth={6}
             x1={136}
             x2={100}
@@ -422,7 +422,7 @@ const AnimatedDesignGraphic = () => {
                 ease: "easeOut",
               }}
             >
-              <ShapeSwitcher id={i % 3} size="sm" color="white" />
+              <ShapeSwitcher id={i % 3} size="sm" color="var(--primary)" />
             </motion.g>
           ))}
         </g>

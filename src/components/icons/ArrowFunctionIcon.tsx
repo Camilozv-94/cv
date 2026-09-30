@@ -9,6 +9,7 @@ const ArrowFunction = ({ size, color }: iconType) => {
       width={width}
       height={height}
       stroke={color}
+      fill="var(--background)"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
