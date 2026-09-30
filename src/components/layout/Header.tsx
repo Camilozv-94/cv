@@ -6,7 +6,8 @@ import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Fragment } from "react";
 import { ThemeToggle } from "../theme/ThemeToggle";
-import { Menu, X } from "lucide-react";
+import { X } from "../icons/XIcon";
+import { Menu } from "../icons/MenuIcon";
 
 const LOCALES = ["en", "es"] as const;
 
@@ -41,9 +42,13 @@ export default function Header() {
         onClick={() => setIsOpen((prev) => !prev)}
         aria-label={isOpen ? "Close menu" : "Open menu"}
         aria-expanded={isOpen}
-        className="rounded-md p-2 text-primary focus:ring-1 focus:ring-secondary focus:outline-none lg:hidden"
+        className="flex items-center justify-center rounded-md p-2 text-primary focus:ring-1 focus:ring-secondary focus:outline-none lg:hidden"
       >
-        {isOpen ? <X className="size-6" /> : <Menu className="size-6" />}
+        {isOpen ? (
+          <X size="md" color="var(--primary)" />
+        ) : (
+          <Menu size="md" color="var(--primary)" />
+        )}
       </button>
 
       <nav

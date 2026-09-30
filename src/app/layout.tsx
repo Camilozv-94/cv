@@ -32,7 +32,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col">
-        <ThemeProvider attribute="data-theme" defaultTheme="light" enableSystem>
+        <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
           <NextIntlClientProvider>
             <Header />
             {children}
