@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-const AboutMe = () => {
+const AboutMeSection = () => {
   const t = useTranslations("AboutMe");
   return (
     <div className="flex flex-col gap-2">
@@ -19,4 +19,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default AboutMeSection;

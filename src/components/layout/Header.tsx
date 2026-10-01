@@ -24,6 +24,7 @@ export default function Header() {
   };
 
   const closeMenu = () => setIsOpen(false);
+  const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (
     <header className="relative flex h-16 w-full flex-row items-center justify-between border-b border-tertiary/10 bg-background px-4 md:px-8">
@@ -39,7 +40,7 @@ export default function Header() {
 
       <button
         type="button"
-        onClick={() => setIsOpen((prev) => !prev)}
+        onClick={toggleMenu}
         aria-label={isOpen ? "Close menu" : "Open menu"}
         aria-expanded={isOpen}
         className="flex items-center justify-center rounded-md p-2 text-primary focus:ring-1 focus:ring-secondary focus:outline-none lg:hidden"

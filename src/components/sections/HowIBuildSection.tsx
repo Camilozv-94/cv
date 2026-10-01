@@ -6,7 +6,7 @@ interface BuildCard {
   description: string;
 }
 
-const HowIBuild = () => {
+const HowIBuildSection = () => {
   const t = useTranslations("HowIBuild");
   const content = t.raw("card") as BuildCard[];
 
@@ -35,4 +35,4 @@ const HowIBuild = () => {
   );
 };
 
-export default HowIBuild;
+export default HowIBuildSection;

@@ -7,9 +7,13 @@ import { Moon } from "../icons/MoonIcon";
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
+  const handleToggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={handleToggleTheme}
       className="flex flex-row items-center  justify-center gap-2 rounded-md border border-tertiary bg-background p-2 text-primary"
       aria-label="Toggle Theme"
     >

@@ -31,14 +31,28 @@ const ExpandableCard = ({ title, elements }: ExpandableCardProps) => {
     [elements],
   );
 
+  const handleMouseEnter = () => {
+    if (isNotMobile) setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    if (isNotMobile) setIsHovered(false);
+  };
+
+  const handleTapStart = () => {
+    if (!isNotMobile) setIsHovered((prev) => !prev);
+  };
+
+  const handleTapCancel = () => {
+    if (!isNotMobile) setIsHovered(false);
+  };
+
   return (
     <motion.div
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      onTapStart={
-        !isNotMobile ? () => setIsHovered((value) => !value) : () => {}
-      }
-      onTapCancel={!isNotMobile ? () => setIsHovered(false) : () => {}}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onTapStart={handleTapStart}
+      onTapCancel={handleTapCancel}
       className="flex flex-col gap-2 overflow-hidden rounded-xl bg-secondary-background p-6 transition-all duration-300"
     >
       <h2 className="mb-2 font-bold text-secondary">{title}</h2>

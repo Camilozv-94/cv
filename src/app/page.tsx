@@ -1,7 +1,7 @@
-import AboutMe from "@/components/sections/AboutMe";
+import AboutMeSection from "@/components/sections/AboutMeSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import HomeSection from "@/components/sections/HomeSection";
-import HowIBuild from "@/components/sections/HowIBuildSection";
+import HowIBuildSection from "@/components/sections/HowIBuildSection";
 import LetsTalkSection from "@/components/sections/LetsTalkSection";
 import StackSection from "@/components/sections/StackSection";
 
@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <div className="m-8 flex flex-1 flex-col gap-8">
       <HomeSection />
-      <HowIBuild />
+      <HowIBuildSection />
       <StackSection />
       <ExperienceSection />
-      <AboutMe />
+      <AboutMeSection />
       <LetsTalkSection />
     </div>
   );
