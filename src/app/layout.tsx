@@ -35,7 +35,9 @@ export default function RootLayout({
         <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
           <NextIntlClientProvider>
             <Header />
-            {children}
+            <main className="container mx-auto flex flex-1 flex-col px-4 py-8">
+              {children}
+            </main>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

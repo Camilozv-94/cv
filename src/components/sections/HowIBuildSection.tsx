@@ -13,9 +13,9 @@ const HowIBuildSection = () => {
   return (
     <div className="my-10 flex flex-col gap-2 overflow-x-scroll 2xl:overflow-hidden">
       <div className="min-w-7xl">
-        <h1 className="mb-2 font-bold text-secondary">{t("title")}</h1>
-        <h2 className="text-3xl font-bold text-primary">{t("description")}</h2>
-        <p className="text-tertiary">
+        <h1 className="section-label mb-2">{t("title")}</h1>
+        <h2 className="section-title">{t("description")}</h2>
+        <p className="section-description">
           A clear methodology that turns ambiguity into a predictable,
           high-quality outcome.
         </p>
