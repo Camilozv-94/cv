@@ -10,7 +10,6 @@ const LetsTalkSection = () => {
         <p className="text-tertiary">{t("introduction")}</p>
       </div>
       <div className="flex flex-row gap-2">
-        <span className="hidden size-30 bg-secondary md:block" />
         <div className="flex flex-col gap-2">
           <p className="text-primary">{t("description-title")}</p>
           <p className="text-tertiary">{t("description")}</p>

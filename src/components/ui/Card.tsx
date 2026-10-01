@@ -13,7 +13,7 @@ export const Card = ({ title, description, index, variant = 'process' }: CardPro
   };
 
   return (
-    <div className={`flex flex-col ${variant === 'process' && 'w-60'} gap-2 rounded-xl bg-secondary-background p-6`}>
+    <div className={`flex flex-col ${variant === 'process' && 'w-70'} gap-2 rounded-xl bg-secondary-background p-6`}>
       {variant === 'process' && (
         <div className="flex flex-row items-center justify-between">
           <h1 className="font-bold text-secondary">{index}</h1>
