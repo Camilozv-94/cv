@@ -1,7 +1,11 @@
 import React from "react";
 import { LineSet } from "./LineSet";
 
-export const MockInterface = ({ id_prefix }: { id_prefix: string }) => {
+interface MockInterfaceProps {
+  id_prefix: string;
+}
+
+export const MockInterface = ({ id_prefix }: MockInterfaceProps) => {
   return (
     <>
       <rect

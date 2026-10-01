@@ -1,9 +1,14 @@
 import { Card } from "../ui/Card";
 import { useTranslations } from "next-intl";
 
+interface BuildCard {
+  title: string;
+  description: string;
+}
+
 const HowIBuild = () => {
   const t = useTranslations("HowIBuild");
-  const content = t.raw("card") as { title: string; description: string }[];
+  const content = t.raw("card") as BuildCard[];
 
   return (
     <div className="my-10 flex flex-col gap-2 overflow-x-scroll 2xl:overflow-hidden">

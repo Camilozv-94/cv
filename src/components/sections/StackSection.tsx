@@ -2,9 +2,14 @@ import { useTranslations } from "next-intl";
 import ExpandableCard from "../ui/ExpandableCard";
 import type { Element } from "../ui/ExpandableCard";
 
+interface StackCard {
+  title: string;
+  elements: Element[];
+}
+
 const StackSection = () => {
   const t = useTranslations("Stack");
-  const content = t.raw("card") as { title: string; elements: Element[] }[];
+  const content = t.raw("card") as StackCard[];
   return (
     <div className="flex flex-col gap-2">
       <h1 className="font-bold text-secondary">{t("title")}</h1>
