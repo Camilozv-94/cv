@@ -26,24 +26,20 @@
     "description": "Mi proceso",
     "card": [
       {
-        "title": "Entender",
-        "description": "Aclarar objetivos, restricciones y métricas de éxito antes de escribir una sola línea de código."
+        "title": "Arquitectura",
+        "description": "Traducir los requerimientos del negocio en bases técnicas escalables. Esto implica mapear las restricciones del sistema, definir los contratos de datos de las API y diseñar arquitecturas modulares como micro-frontends antes de escribir una sola línea de código."
       },
       {
-        "title": "Diseñar",
-        "description": "Definir el lenguaje visual, patrones de interacción y jerarquía de componentes."
-      },
-      {
-        "title": "Sistematizar",
-        "description": "Convertir diseños en tokens, componentes reutilizables y patrones documentados."
+        "title": "Estandarizar",
+        "description": "Crear los lineamientos técnicos que aceleran la velocidad del equipo. Al establecer definiciones estrictas en TypeScript y centralizar los sistemas de diseño, se garantiza la consistencia de la interfaz de usuario y la mantenibilidad a través de múltiples aplicaciones empresariales."
       },
       {
         "title": "Construir",
-        "description": "Escribir código limpio y modular con enfoque en rendimiento, accesibilidad y pruebas."
+        "description": "Entregar soluciones robustas listas para producción. El enfoque principal es implementar interfaces fluidas y altamente accesibles, respaldadas por una cobertura exhaustiva de pruebas unitarias, validación E2E transversal con Playwright y pipelines de CI/CD automatizados."
       },
       {
-        "title": "Optimizar",
-        "description": "Medir, iterar y lanzar con confianza, manteniendo y mejorando continuamente."
+        "title": "Escalar",
+        "description": "Optimizar el entorno tanto para el usuario final como para el equipo de ingeniería. Monitorear continuamente las métricas de rendimiento, modernizar la infraestructura de compilación y mejorar la Experiencia del Desarrollador (DX) para elevar la productividad general del equipo."
       }
     ]
   },
@@ -128,17 +124,17 @@
     ]
   },
   "AboutMe": {
-    "title": "SOBRE MÍ",
-    "sub-title": "Un poco sobre mí",
-    "introduction": "Soy un desarrollador que cree que la interfaz de usuario debe ser tanto atractiva como a prueba de fallos.",
-    "description": "He pasado casi una década acortando la brecha entre los diseñadores creativos y los ingenieros de sistemas. Mi filosofía es simple: los componentes de la interfaz no solo deben verse espectaculares, sino que deben estar estructurados como software limpio y testeable.",
-    "second-description": "Me especializo en arquitecturas de React de alto rendimiento, sistemas de diseño y experiencias fluidas con precisión a nivel de píxel. Ya sea estandarizando un monorepo o microoptimizando layouts, abordo el desarrollo frontend como una disciplina de arquitectura rigurosa."
+    "title": "ACERCA DE MÍ",
+    "sub-title": "Arquitectura de Sistemas Front-End Escalables",
+    "introduction": "Soy un Desarrollador Front-End Senior que cree que la interfaz de usuario debe ser visualmente atractiva y estructuralmente a prueba de balas.",
+    "description": "Con más de 7 años de experiencia construyendo aplicaciones web empresariales, conecto la visión del producto con la ingeniería de sistemas. Mi filosofía es simple: las interfaces no solo deben lucir espectaculares, deben construirse como software escalable y testeable que acelere la velocidad de todo el equipo.",
+    "second-description": "Me especializo en arquitecturas de alto rendimiento con React, infraestructuras de micro-frontends y sistemas de diseño centralizados. Ya sea liderando migraciones masivas a TypeScript, optimizando pipelines de CI/CD o estandarizando herramientas modernas, abordo el desarrollo front-end como una disciplina arquitectónica rigurosa diseñada para resolver desafíos de negocio complejos."
   },
   "LetsTalk": {
     "title": "HABLEMOS",
-    "sub-title": "¿Tienes un producto en mente?",
-    "introduction": "Estoy abierto a contratos selectivos, consultorías y colaboraciones a largo plazo. Envía un mensaje y hablemos.",
+    "sub-title": "¿Listo para escalar tu arquitectura front-end?",
+    "introduction": "Estoy abierto a roles estratégicos, consultoría técnica y alianzas a largo plazo. Envíame un mensaje y hablemos.",
     "description-title": "Lo que estoy buscando",
-    "description": "Interfaces complejas, sistemas de diseño, UI crítica para el rendimiento y equipos que valoren el rigor en la ingeniería. Si tienes un proyecto que necesita un desarrollador UI senior / Ingeniero de Software que pueda conectar el diseño con la producción, iniciemos una conversación."
+    "description": "Desafíos arquitectónicos complejos, sistemas de diseño a nivel empresarial y equipos que prioricen el rigor técnico. Si tu proyecto necesita un Ingeniero Front-End Senior capaz de liderar la estrategia técnica desde la arquitectura inicial hasta la producción, iniciemos una conversación."
   }
 }
