@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Button from "../ui/Button";
+import Link from "../ui/Link";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Fragment } from "react";
@@ -90,7 +90,7 @@ export default function Header() {
             </a>
           </li>
           <li onClick={closeMenu}>
-            <Button title={t("nav.letsTalk")} variant="neon" url="#" />
+            <Link title={t("nav.letsTalk")} variant="neon" url="#" />
           </li>
           <li>
             <ThemeToggle />
