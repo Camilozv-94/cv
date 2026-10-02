@@ -4,7 +4,7 @@ interface ProgressBarProps {
   value: number;
 }
 
-const ProgressBar: React.FC<ProgressBarProps> = ({ value }) => {
+const ProgressBar= ({ value }: ProgressBarProps) => {
   const clampedValue = Math.min(Math.max(value, 0), 100);
 
   return (
@@ -13,6 +13,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ value }) => {
       aria-valuenow={clampedValue}
       aria-valuemin={0}
       aria-valuemax={100}
+      aria-label="Experience with the technology"
       className="h-4 w-full overflow-hidden rounded-full bg-gray-200 "
     >
       <motion.div
@@ -20,7 +21,6 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ value }) => {
         initial={{ width: 0 }}
         whileInView={{ width: `${clampedValue}%` }}
         transition={{ duration: 0.6, delay: 0.15 }}
-        style={{ width: `${clampedValue}%` }}
       />
     </div>
   );

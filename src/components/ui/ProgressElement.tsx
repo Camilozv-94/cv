@@ -5,7 +5,7 @@ interface ProgressElementProps {
   value: number;
 }
 
-const ProgressElement: React.FC<ProgressElementProps> = ({ tech, value }) => {
+const ProgressElement = ({ tech, value }:ProgressElementProps) => {
   return (
     <div className="flex w-full items-center justify-between gap-4 bg-transparent">
       <p className="font-medium text-primary">{tech}</p>
