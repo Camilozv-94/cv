@@ -23,7 +23,7 @@ const variants = {
 const transition = { duration: 0.3, ease: "easeInOut" } as const;
 
 const ExpandableCard = ({ title, elements }: ExpandableCardProps) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   const isNotMobile = useMediaQuery("(min-width: 768px)");
 
   const techSummary = useMemo(
@@ -32,19 +32,19 @@ const ExpandableCard = ({ title, elements }: ExpandableCardProps) => {
   );
 
   const handleMouseEnter = () => {
-    if (isNotMobile) setIsHovered(true);
+    if (isNotMobile) setIsExpanded(true);
   };
 
   const handleMouseLeave = () => {
-    if (isNotMobile) setIsHovered(false);
+    if (isNotMobile) setIsExpanded(false);
   };
 
   const handleTapStart = () => {
-    if (!isNotMobile) setIsHovered((prev) => !prev);
+    if (!isNotMobile) setIsExpanded((prev) => !prev);
   };
 
   const handleTapCancel = () => {
-    if (!isNotMobile) setIsHovered(false);
+    if (!isNotMobile) setIsExpanded(false);
   };
 
   return (
@@ -58,7 +58,7 @@ const ExpandableCard = ({ title, elements }: ExpandableCardProps) => {
       <h2 className="mb-2 font-bold text-secondary">{title}</h2>
 
       <AnimatePresence mode="wait" initial={false}>
-        {!isHovered ? (
+        {!isExpanded ? (
           <motion.p
             key="summary-text"
             variants={variants}
