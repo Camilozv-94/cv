@@ -17,9 +17,9 @@ const HomeSection = () => {
           <Link title={t("about")} variant="outline" url="#" />
         </div>
       </div>
-      <span className="hidden h-50 w-1/2 md:block">
+      <div className="hidden h-50 w-1/2 md:block">
         <AnimatedDesignGraphic />
-      </span>
+      </div>
     </div>
   );
 };
