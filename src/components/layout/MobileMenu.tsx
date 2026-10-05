@@ -6,6 +6,8 @@ import { ThemeToggle } from "../theme/ThemeToggle";
 import { X } from "../icons/XIcon";
 import { Menu } from "../icons/MenuIcon";
 import { changeLocale } from "@/app/actions/locale";
+import { DownloadButton } from "../ui/DownloadButton";
+import { useTranslations } from "next-intl";
 
 const LOCALES = ["en", "es"] as const;
 type Locale = (typeof LOCALES)[number];
@@ -34,6 +36,8 @@ export default function MobileMenu({
   const handleChangeLocale = () => {
     startTransition(() => changeLocale(currentLocale));
   };
+
+  const t = useTranslations("LanguageToggle");
 
   return (
     <>
@@ -98,7 +102,7 @@ export default function MobileMenu({
             <button
               type="button"
               disabled={isPending}
-              aria-label={`Current language is ${currentLocale.toUpperCase()}. Click to switch.`}
+              aria-label={t("ariaToggle",{"language":currentLocale.toUpperCase()})}
               className="flex flex-row gap-2 divide-x divide-gray-300 rounded-sm border border-tertiary bg-background p-2 text-primary [&>*:not(:last-child)]:pr-2 disabled:opacity-50"
               onClick={handleChangeLocale}
             >
@@ -115,6 +119,9 @@ export default function MobileMenu({
                 </span>
               ))}
             </button>
+          </li>
+          <li onClick={closeMenu}>
+            <DownloadButton />
           </li>
         </ul>
       </nav>
