@@ -1,17 +1,13 @@
 "use client";
 import { useMediaQuery } from "usehooks-ts";
-import { useState, useMemo } from "react";
+import { ReactNode, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import ProgressElement from "./ProgressElement";
 
-export interface Element {
-  tech: string;
-  percentage: number;
-}
 
 interface ExpandableCardProps {
   title: string;
-  elements: Element[];
+  collapsedContent: ReactNode;
+  expandedContent:ReactNode;
 }
 
 const variants = {
@@ -22,14 +18,10 @@ const variants = {
 
 const transition = { duration: 0.3, ease: "easeInOut" } as const;
 
-const ExpandableCard = ({ title, elements }: ExpandableCardProps) => {
+const ExpandableCard = ({ title, collapsedContent, expandedContent }: ExpandableCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const isNotMobile = useMediaQuery("(min-width: 768px)");
 
-  const techSummary = useMemo(
-    () => elements.map((element) => element.tech).join(", "),
-    [elements],
-  );
 
   const handleMouseEnter = () => {
     if (isNotMobile) setIsExpanded(true);
@@ -68,7 +60,7 @@ const ExpandableCard = ({ title, elements }: ExpandableCardProps) => {
             transition={transition}
             className="truncate text-primary"
           >
-            {techSummary}
+            {collapsedContent}
           </motion.p>
         ) : (
           <motion.div
@@ -80,13 +72,7 @@ const ExpandableCard = ({ title, elements }: ExpandableCardProps) => {
             transition={transition}
             className="flex flex-col gap-2"
           >
-            {elements.map((element) => (
-              <ProgressElement
-                key={element.tech}
-                tech={element.tech}
-                value={element.percentage}
-              />
-            ))}
+            {expandedContent}
           </motion.div>
         )}
       </AnimatePresence>
