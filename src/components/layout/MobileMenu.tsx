@@ -1,16 +1,12 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import Link from "../ui/Link";
 import { ThemeToggle } from "../theme/ThemeToggle";
 import { X } from "../icons/XIcon";
 import { Menu } from "../icons/MenuIcon";
-import { changeLocale } from "@/app/actions/locale";
 import { DownloadButton } from "../ui/DownloadButton";
-import { useTranslations } from "next-intl";
-
-const LOCALES = ["en", "es"] as const;
-type Locale = (typeof LOCALES)[number];
+import { Locale, LocaleToggle } from "../i18n/LocaleToggle";
 
 interface MobileMenuProps {
   howIBuild: string;
@@ -28,16 +24,9 @@ export default function MobileMenu({
   currentLocale,
 }: MobileMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [isPending, startTransition] = useTransition();
 
   const closeMenu = () => setIsOpen(false);
   const toggleMenu = () => setIsOpen((prev) => !prev);
-
-  const handleChangeLocale = () => {
-    startTransition(() => changeLocale(currentLocale));
-  };
-
-  const t = useTranslations("LanguageToggle");
 
   return (
     <>
@@ -99,26 +88,7 @@ export default function MobileMenu({
             <ThemeToggle />
           </li>
           <li>
-            <button
-              type="button"
-              disabled={isPending}
-              aria-label={t("ariaToggle",{"language":currentLocale.toUpperCase()})}
-              className="flex flex-row gap-2 divide-x divide-gray-300 rounded-sm border border-tertiary bg-background p-2 text-primary disabled:opacity-50 [&>*:not(:last-child)]:pr-2"
-              onClick={handleChangeLocale}
-            >
-              {LOCALES.map((locale) => (
-                <span
-                  className={
-                    currentLocale === locale
-                      ? "font-bold text-secondary"
-                      : "text-primary opacity-60"
-                  }
-                  key={locale}
-                >
-                  {locale.toUpperCase()}
-                </span>
-              ))}
-            </button>
+            <LocaleToggle currentLocale={currentLocale} />
           </li>
           <li onClick={closeMenu}>
             <DownloadButton />
