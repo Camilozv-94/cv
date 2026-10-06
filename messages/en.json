@@ -47,51 +47,130 @@
     "title": "Stack",
     "description": "Technologies",
     "text": "Organized by category-no logo wall, just the tools I use to deliver.",
+    "ariaProgress": "My knowledge level for {lang} is {value} out of 100",
     "card": [
       {
         "title": "Front-end",
         "elements": [
-          { "tech": "React", "percentage": 100 },
-          { "tech": "Next.js", "percentage": 70 },
-          { "tech": "TypeScript", "percentage": 100 },
-          { "tech": "Tailwind CSS", "percentage": 70 },
-          { "tech": "Material UI", "percentage": 70 },
-          { "tech": "Styled Components", "percentage": 70 },
-          { "tech": "Redux", "percentage": 60 },
-          { "tech": "Framer Motion", "percentage": 20 }
+          {
+            "tech": "React",
+            "percentage": 100
+          },
+          {
+            "tech": "Next.js",
+            "percentage": 70
+          },
+          {
+            "tech": "TypeScript",
+            "percentage": 100
+          },
+          {
+            "tech": "Tailwind CSS",
+            "percentage": 70
+          },
+          {
+            "tech": "Material UI",
+            "percentage": 70
+          },
+          {
+            "tech": "Styled Components",
+            "percentage": 70
+          },
+          {
+            "tech": "Redux",
+            "percentage": 60
+          },
+          {
+            "tech": "Framer Motion",
+            "percentage": 20
+          }
         ]
       },
       {
         "title": "Testing & Quality",
         "elements": [
-          { "tech": "Playwright", "percentage": 70 },
-          { "tech": "Cypress", "percentage": 70 },
-          { "tech": "Jest", "percentage": 80 },
-          { "tech": "Karma", "percentage": 70 },
-          { "tech": "Jasmine", "percentage": 50 }
+          {
+            "tech": "Playwright",
+            "percentage": 70
+          },
+          {
+            "tech": "Cypress",
+            "percentage": 70
+          },
+          {
+            "tech": "Jest",
+            "percentage": 80
+          },
+          {
+            "tech": "Karma",
+            "percentage": 70
+          },
+          {
+            "tech": "Jasmine",
+            "percentage": 50
+          }
         ]
       },
       {
         "title": "Architecture & Tooling",
         "elements": [
-          { "tech": "Micro Frontends", "percentage": 70 },
-          { "tech": "RSBuild", "percentage": 60 },
-          { "tech": "Node.js", "percentage": 60 },
-          { "tech": "Git", "percentage": 90 },
-          { "tech": "Azure DevOps", "percentage": 65 },
-          { "tech": "Jenkins", "percentage": 60 },
-          { "tech": "Redux", "percentage": 60 },
-          { "tech": "Vite/pnpm", "percentage": 50 }
+          {
+            "tech": "Micro Frontends",
+            "percentage": 70
+          },
+          {
+            "tech": "RSBuild",
+            "percentage": 60
+          },
+          {
+            "tech": "Node.js",
+            "percentage": 60
+          },
+          {
+            "tech": "Git",
+            "percentage": 90
+          },
+          {
+            "tech": "Azure DevOps",
+            "percentage": 65
+          },
+          {
+            "tech": "Jenkins",
+            "percentage": 60
+          },
+          {
+            "tech": "Redux",
+            "percentage": 60
+          },
+          {
+            "tech": "Vite/pnpm",
+            "percentage": 50
+          }
         ]
       },
       {
         "title": "AI & Design",
         "elements": [
-          { "tech": "Figma", "percentage": 70 },
-          { "tech": "Cursor", "percentage": 70 },
-          { "tech": "GitHub Copilot", "percentage": 90 },
-          { "tech": "Anthropic Tooling", "percentage": 70 },
-          { "tech": "Antigravity tooling", "percentage": 65 }
+          {
+            "tech": "Figma",
+            "percentage": 70
+          },
+          {
+            "tech": "Cursor",
+            "percentage": 70
+          },
+          {
+            "tech": "GitHub Copilot",
+            "percentage": 90
+          },
+          {
+            "tech": "Anthropic Tooling",
+            "percentage": 70
+          },
+          {
+            "tech": "Antigravity tooling",
+            "percentage": 65
+          }
         ]
       }
     ]
@@ -109,14 +188,14 @@
       },
       {
         "date": "Oct 2019 - Feb 2022",
-        "location": "// Hibrid",
+        "location": "// Hybrid",
         "title": "Web Developer",
         "company": "Owens Illinois",
         "summary": "Built internal business applications utilizing React and Node.js, enhanced the corporate website utilizing PHP, JavaScript, and SQL, and managed automated CI/CD pipelines in Azure DevOps."
       },
       {
         "date": "Mar 2019 - Oct 2019",
-        "location": "// Presential",
+        "location": "// In-Person",
         "title": "Lead Software Engineer",
         "company": "Dream House",
         "summary": "Developed performance-driven training simulators using Unity and C#, directed the web development team to launch the corporate website, and implemented Scrum agile practices."
@@ -131,10 +210,20 @@
     "second-description": "I specialize in high-performance React architectures, micro-frontend infrastructures, and centralized design systems. Whether it's driving massive TypeScript migrations, optimizing CI/CD pipelines, or standardizing modern tooling, I approach front-end development as a rigorous architectural discipline designed to solve complex business challenges."
   },
   "LetsTalk": {
-    "title": "LET´S TALK",
+    "title": "LET'S TALK",
     "sub-title": "Ready to scale your front-end architecture?",
     "introduction": "I'm open to strategic roles, technical consulting, and long-term partnerships. Send a message and let's talk.",
     "description-title": "What I'm looking for",
     "description": "Complex architectural challenges, enterprise-scale design systems, and teams that prioritize engineering rigor. If your project requires a Senior Front-End Engineer who can drive technical strategy from initial architecture to production, let's start a conversation."
+  },
+  "Theme": {
+    "ariaOnDark": "Switch to light Theme",
+    "ariaOnLight": "Switch to dark Theme"
+  },
+  "LanguageToggle": {
+    "ariaToggle": "Current language is {language}. Click to switch."
+  },
+  "Download": {
+    "ariaButton": "Click to download resume"
   }
 }

@@ -1,10 +1,12 @@
+"use client";
 import { motion } from "framer-motion";
 
 interface ProgressBarProps {
   value: number;
+  aria?: string;
 }
 
-const ProgressBar= ({ value }: ProgressBarProps) => {
+const ProgressBar= ({ value, aria="progress" }: ProgressBarProps) => {
   const clampedValue = Math.min(Math.max(value, 0), 100);
 
   return (
@@ -13,7 +15,7 @@ const ProgressBar= ({ value }: ProgressBarProps) => {
       aria-valuenow={clampedValue}
       aria-valuemin={0}
       aria-valuemax={100}
-      aria-label="Experience with the technology"
+      aria-valuetext={aria}
       className="h-4 w-full overflow-hidden rounded-full bg-gray-200 "
     >
       <motion.div

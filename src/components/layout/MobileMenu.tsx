@@ -103,7 +103,7 @@ export default function MobileMenu({
               type="button"
               disabled={isPending}
               aria-label={t("ariaToggle",{"language":currentLocale.toUpperCase()})}
-              className="flex flex-row gap-2 divide-x divide-gray-300 rounded-sm border border-tertiary bg-background p-2 text-primary [&>*:not(:last-child)]:pr-2 disabled:opacity-50"
+              className="flex flex-row gap-2 divide-x divide-gray-300 rounded-sm border border-tertiary bg-background p-2 text-primary disabled:opacity-50 [&>*:not(:last-child)]:pr-2"
               onClick={handleChangeLocale}
             >
               {LOCALES.map((locale) => (

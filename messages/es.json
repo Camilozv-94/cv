@@ -8,7 +8,7 @@
     "nav": {
       "howIBuild": "Cómo construyo",
       "experience": "Experiencia",
-      "about": "Sobre mi",
+      "about": "Sobre mí",
       "letsTalk": "Hablemos"
     }
   },
@@ -19,10 +19,10 @@
     },
     "description": "Desarrollo interfaces digitales escalables, accesibles y centradas en el usuario, donde el diseño y el código trabajan juntos como una única experiencia.",
     "experience": "Ver experiencias",
-    "about": "Sobre mi"
+    "about": "Sobre mí"
   },
   "HowIBuild": {
-    "title": "Como construyo",
+    "title": "Cómo construyo",
     "description": "Mi proceso",
     "card": [
       {
@@ -46,7 +46,8 @@
   "Stack": {
     "title": "Stack",
     "description": "Tecnologías",
-    "text": "Organizado por categoría, sin parede de logos, solo las herramientas que uso para entregar.",
+    "text": "Organizado por categoría, sin pared de logos, solo las herramientas que uso para entregar.",
+    "ariaProgress": "Mi conocimiento en {lang} es de {value} de 100",
     "card": [
       {
         "title": "Front-end",
@@ -136,5 +137,15 @@
     "introduction": "Estoy abierto a roles estratégicos, consultoría técnica y alianzas a largo plazo. Envíame un mensaje y hablemos.",
     "description-title": "Lo que estoy buscando",
     "description": "Desafíos arquitectónicos complejos, sistemas de diseño a nivel empresarial y equipos que prioricen el rigor técnico. Si tu proyecto necesita un Ingeniero Front-End Senior capaz de liderar la estrategia técnica desde la arquitectura inicial hasta la producción, iniciemos una conversación."
+  },
+  "Theme": {
+    "ariaOnDark": "Cambia a una interfaz clara",
+    "ariaOnLight": "Cambia a una interfaz oscura"
+  },
+  "LanguageToggle": {
+    "ariaToggle": "El idioma actual es {language}. Haz clic para cambiarlo."
+  },
+  "Download": {
+    "ariaButton": "Haz clic para descargar la hoja de vida."
   }
 }

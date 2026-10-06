@@ -21,14 +21,14 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col">
-        <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
-          <NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
             <Header />
             <main className="container mx-auto flex flex-1 flex-col px-4 py-8">
               {children}
             </main>
-          </NextIntlClientProvider>
-        </ThemeProvider>
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

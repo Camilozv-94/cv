@@ -28,10 +28,11 @@ const StackSection = () => {
             key={element.tech}
             tech={element.tech}
             value={element.percentage}
+            aria={t("ariaProgress",{lang:element.tech, value: element.percentage})}
           />
         ))
       };
-    }),[content]);
+    }),[content, t]);
 
   return (
     <div className="flex flex-col gap-2">
@@ -39,9 +40,9 @@ const StackSection = () => {
       <h2 className="section-title">{t("description")}</h2>
       <p className="section-description">{t("text")}</p>
       <div className="mt-4 grid grid-cols-1 items-start gap-4 md:grid-cols-2">
-        {newContent.map((item, index) => (
+        {newContent.map((item) => (
           <ExpandableCard
-            key={index}
+            key={item.title}
             title={item.title}
             expandedContent={item.expandedContent}
             collapsedContent={item.collapsedContent}
