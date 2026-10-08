@@ -2,6 +2,7 @@
 
 import { cookies } from "next/headers";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const LOCALES = ["en", "es"] as const;
 type Locale = (typeof LOCALES)[number];
 

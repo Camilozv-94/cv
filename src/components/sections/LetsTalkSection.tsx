@@ -1,4 +1,8 @@
 import { useTranslations } from "next-intl";
+import LinkIcon from "../ui/LinkIcon";
+import LinkedinIcon from "../icons/LinkedinIcon";
+import MailIcon from "../icons/MailIcon";
+
 
 const LetsTalkSection = () => {
   const t = useTranslations("LetsTalk");
@@ -12,6 +16,13 @@ const LetsTalkSection = () => {
       <div className="flex flex-col gap-2">
         <p className="text-primary">{t("description-title")}</p>
         <p className="section-description">{t("description")}</p>
+      </div>
+      <div className="mt-4 flex flex-col gap-2">
+        <h3 className="text-xl font-bold">{t("contact")}</h3>
+        <div className="mt-4 flex flex-row gap-2">
+          <LinkIcon url="https://linkedin.com/in/camilo-zuluaga-velasquez" variant="outline" title={<LinkedinIcon size="md" color="var(--primary)" />} />
+          <LinkIcon url="mailto:hello@camilozuluaga.dev" variant="outline" title={<MailIcon size="md" color="var(--primary)" />} />
+        </div>
       </div>
     </div>
   );

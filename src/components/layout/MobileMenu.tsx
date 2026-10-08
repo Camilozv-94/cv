@@ -7,6 +7,8 @@ import { X } from "../icons/XIcon";
 import { Menu } from "../icons/MenuIcon";
 import { DownloadButton } from "../ui/DownloadButton";
 import { Locale, LocaleToggle } from "../i18n/LocaleToggle";
+import LinkIcon from "../ui/LinkIcon";
+import GithubIcon from "../icons/GithubIcon";
 
 interface MobileMenuProps {
   howIBuild: string;
@@ -98,11 +100,14 @@ export default function MobileMenu({
           <li>
             <ThemeToggle />
           </li>
-          <li>
+          <li onClick={closeMenu}>
             <LocaleToggle currentLocale={currentLocale} />
           </li>
           <li onClick={closeMenu}>
             <DownloadButton />
+          </li>
+          <li onClick={closeMenu}>
+            <LinkIcon url="https://github.com/Camilozv-94/cv" variant="outline" title={<GithubIcon size="sm" color="var(--primary)" />} />
           </li>
         </ul>
       </nav>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 export interface LineSetProps {
   isHorizontal: boolean;
@@ -23,12 +23,12 @@ export const LineSet = ({
   color = "white",
   strokeWidth = 2,
 }: LineSetProps): React.JSX.Element => {
+  const [randomFactor] = useState(() => (Math.random() * 2 - 1) * randomness);
+
   return (
     <>
       {Array.from({ length: amount }, (_, index) => {
         const offset = index * distanceBetween;
-
-        const randomFactor = (Math.random() * 2 - 1) * randomness;
 
         const lineSize = Math.max(0, size * (1 + randomFactor));
 
