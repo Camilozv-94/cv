@@ -4,9 +4,11 @@ import { useTranslations } from "next-intl";
 import { Download } from "../icons/DownloadIcon";
 import { downloadFile } from "@/lib/downloadFile";
 
+const FILE_NAME = "Camilo Zuluaga-CV.pdf";
+
 export function DownloadButton() {
   const handleDownload = () => {
-    downloadFile("/test.txt", "test.txt");
+    downloadFile(`/${FILE_NAME}`, FILE_NAME);
   };
 
   const t = useTranslations("Download");
