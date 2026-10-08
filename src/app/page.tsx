@@ -4,16 +4,20 @@ import HomeSection from "@/components/sections/HomeSection";
 import HowIBuildSection from "@/components/sections/HowIBuildSection";
 import LetsTalkSection from "@/components/sections/LetsTalkSection";
 import StackSection from "@/components/sections/StackSection";
+import JsonLd from "@/components/seo/JsonLd";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8">
-      <HomeSection />
-      <HowIBuildSection />
-      <StackSection />
-      <ExperienceSection />
-      <AboutMeSection />
-      <LetsTalkSection />
-    </div>
+    <>
+      <JsonLd />
+      <div className="flex flex-col gap-8">
+        <HomeSection />
+        <HowIBuildSection />
+        <StackSection />
+        <ExperienceSection />
+        <AboutMeSection />
+        <LetsTalkSection />
+      </div>
+    </>
   );
 }
