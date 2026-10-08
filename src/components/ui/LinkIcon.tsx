@@ -15,8 +15,8 @@ const Link = ({
 }: LinkProps) => {
 
   const variantStyles = {
-    solid: "bg-secondary text-background px-4 py-2 rounded-sm",
-    outline: "bg-background text-primary px-4 py-2 rounded-sm border-1 border-tertiary",
+    solid: "bg-secondary text-background px-4 py-2 rounded-sm hover:border-primary hover:text-primary",
+    outline: "bg-background text-primary px-4 py-2 rounded-sm border-1 border-tertiary hover:border-secondary hover:text-secondary",
     neon: "bg-secondary/20 text-secondary border-2 border-secondary rounded-md px-4 py-2"
   };
   return (

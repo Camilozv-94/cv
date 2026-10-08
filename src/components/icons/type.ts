@@ -1,6 +1,6 @@
 export interface iconType {
   size: "xs" | "sm" | "md" | "lg";
-  color: string;
+  color?: string;
 }
 
 export const iconSizes = {

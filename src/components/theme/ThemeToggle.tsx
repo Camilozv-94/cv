@@ -16,8 +16,8 @@ export function ThemeToggle() {
   return (
     <button
       onClick={handleToggleTheme}
-      className="flex flex-row items-center  justify-center gap-2 rounded-md border border-tertiary bg-background p-2 text-primary"
-      aria-label={theme === "dark"? t('ariaOnDark'):t('ariaOnLight')}
+      className="flex flex-row items-center  justify-center gap-2 rounded-md border border-tertiary bg-background p-2 text-primary hover:border-secondary"
+      aria-label={theme === "dark" ? t('ariaOnDark') : t('ariaOnLight')}
       suppressHydrationWarning
     >
       <Sun

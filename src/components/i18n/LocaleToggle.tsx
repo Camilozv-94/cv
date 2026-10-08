@@ -6,7 +6,7 @@ import { useTransition } from "react";
 const LOCALES = ["en", "es"] as const;
 export type Locale = (typeof LOCALES)[number];
 
-export const LocaleToggle = ({ currentLocale }: { currentLocale:Locale}) => {
+export const LocaleToggle = ({ currentLocale }: { currentLocale: Locale }) => {
   const [isPending, startTransition] = useTransition();
 
   const t = useTranslations("LanguageToggle");
@@ -20,7 +20,7 @@ export const LocaleToggle = ({ currentLocale }: { currentLocale:Locale}) => {
       type="button"
       disabled={isPending}
       aria-label={t("ariaToggle", { "language": currentLocale.toUpperCase() })}
-      className="flex flex-row gap-2 divide-x divide-gray-300 rounded-sm border border-tertiary bg-background p-2 text-primary disabled:opacity-50 [&>*:not(:last-child)]:pr-2"
+      className="flex flex-row gap-2 divide-x divide-gray-300 rounded-sm border border-tertiary bg-background p-2 text-primary hover:border-secondary disabled:opacity-50 [&>*:not(:last-child)]:pr-2 "
       onClick={handleChangeLocale}
     >
       {LOCALES.map((locale) => (

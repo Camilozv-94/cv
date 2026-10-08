@@ -1,6 +1,6 @@
 import { iconSizes, iconType } from "./type";
 
-const MailIcon = ({ size, color }: iconType) => {
+const MailIcon = ({ size }: iconType) => {
   const { height } = iconSizes[size];
   const width = height;
   return (
@@ -8,7 +8,7 @@ const MailIcon = ({ size, color }: iconType) => {
       viewBox="0 0 24 24"
       width={width}
       height={height}
-      stroke={color}
+      stroke="currentColor"
       fill="var(--background)"
       strokeWidth="2"
     >
