@@ -13,6 +13,7 @@ interface MobileMenuProps {
   experience: string;
   about: string;
   letsTalk: string;
+  stack: string;
   currentLocale: Locale;
 }
 
@@ -21,6 +22,7 @@ export default function MobileMenu({
   experience,
   about,
   letsTalk,
+  stack,
   currentLocale,
 }: MobileMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +58,7 @@ export default function MobileMenu({
         <ul className="flex w-full flex-col items-start gap-4 text-tertiary lg:w-auto lg:flex-row lg:items-center lg:gap-4">
           <li>
             <a
-              href="#"
+              href="#HowIBuild"
               onClick={closeMenu}
               className="block py-1 transition-colors hover:text-primary"
             >
@@ -65,7 +67,16 @@ export default function MobileMenu({
           </li>
           <li>
             <a
-              href="#"
+              href="#Stack"
+              onClick={closeMenu}
+              className="block py-1 transition-colors hover:text-primary"
+            >
+              {stack}
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Experience"
               onClick={closeMenu}
               className="block py-1 transition-colors hover:text-primary"
             >
@@ -74,7 +85,7 @@ export default function MobileMenu({
           </li>
           <li>
             <a
-              href="#"
+              href="#About"
               onClick={closeMenu}
               className="block py-1 transition-colors hover:text-primary"
             >
@@ -82,7 +93,7 @@ export default function MobileMenu({
             </a>
           </li>
           <li onClick={closeMenu}>
-            <Link title={letsTalk} variant="neon" url="#" />
+            <Link title={letsTalk} variant="neon" url="#LetsTalk" />
           </li>
           <li>
             <ThemeToggle />

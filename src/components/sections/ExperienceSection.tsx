@@ -5,7 +5,7 @@ const ExperienceSection = () => {
   const t = useTranslations("Experience");
   const content = t.raw("rows") as ExperienceRow[];
   return (
-    <div className="mt-10 flex flex-col gap-2">
+    <div className="mt-10 flex flex-col gap-2" id="Experience">
       <h1 className="section-label">{t("title")}</h1>
       <h2 className="section-title">{t("sub-title")}</h2>
       <div className="mt-4 flex flex-col gap-4 divide-y divide-gray-300">

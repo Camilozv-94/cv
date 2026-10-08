@@ -22,6 +22,7 @@ export default async function Header() {
         experience={t("nav.experience")}
         about={t("nav.about")}
         letsTalk={t("nav.letsTalk")}
+        stack={t("nav.stack")}
         currentLocale={currentLocale as "en" | "es"}
       />
     </header>

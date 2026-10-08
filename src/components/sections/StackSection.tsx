@@ -35,7 +35,7 @@ const StackSection = () => {
     }),[content, t]);
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2" id="Stack">
       <h1 className="section-label">{t("title")}</h1>
       <h2 className="section-title">{t("description")}</h2>
       <p className="section-description">{t("text")}</p>

@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 const AboutMeSection = () => {
   const t = useTranslations("AboutMe");
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2" id="About">
       <div className="mb-4 flex flex-col gap-4">
         <h1 className="section-label">{t("title")}</h1>
         <h2 className="section-title">{t("sub-title")}</h2>
