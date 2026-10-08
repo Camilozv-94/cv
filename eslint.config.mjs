@@ -8,9 +8,7 @@ const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   tailwind.configs.recommended,
-  // Override default ignores of eslint-config-next.
   globalIgnores([
-    // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",
     "build/**",
@@ -43,6 +41,7 @@ const eslintConfig = defineConfig([
       "@typescript-eslint/no-empty-object-type": "off",
       "@typescript-eslint/no-explicit-any": "warn",
       "tailwindcss/classnames-order": "error",
+      "tailwindcss/no-custom-classname": "off",
       "@stylistic/indent": ["error", 2],
     },
   },
